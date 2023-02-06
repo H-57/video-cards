@@ -1,0 +1,95 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+}
+body{
+    background: #120922;
+    list-style-type: none;
+}
+/* for ul list store all video cards */
+.video{
+
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: auto; */
+    justify-content: space-around;
+row-gap: 20px;
+column-gap: 40px;
+}
+/* for define size of video cards */
+.card{
+    width: 10rem;
+    height: 12rem;
+    color: aliceblue;
+    /* border: solid 1px red; */
+    /* margin: 5px; */
+    background: #1b0f30;
+border-radius: 9px;
+cursor:pointer;
+}
+/* for define image in card */
+.thumbnail{
+    position:relative;
+    width: 90%;
+ 
+    top: 2%;
+    left: 5%;
+        border-radius: 10px;
+        transform: scale(1);
+        transition: all .4s ease-in-out;
+   height: 100%;
+
+   
+}
+/*  for stop over floew of image from card */
+figure{
+    overflow: hidden; 
+	height: 70%;
+}
+
+.thumbnail:hover{
+    /* color: aquamarine; */
+    width: 90%;
+    transform: scale(1.5);
+    
+}
+/* for episode number shows */
+.epnumber{
+  
+    font-size: 21px;
+    text-shadow: 0px 2px 3px aqua;
+    color: aqua;
+}
+/* for title of video shows */
+.card header{
+/* color: tomato; */
+color: white;
+text-shadow:1px 1px 3px tomato ;
+margin-left: 5px;
+}
+.play{
+display:none;
+    position: relative;
+
+
+top: -58%;
+left: 32%;
+font-size: 50px!important;
+}
+.card:hover~.play{display: block!important;}    
+@media only screen and (max-width: 600px) {
+
+
+.card{
+    width: 20rem;
+    height: 24rem;
+}
+.play{
+    left: 40%;
+}
+
+}
+.check{
+    opacity: 0.3;
+}
