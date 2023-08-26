@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tajawal">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="root">
+
+
+
+    <div class="main"  tabindex=" 0">
+
+        
+            <div class="media-thumb"
+                style="background-image: url(https://img.vxdn.net/t-max/w_312/h_468/tulsa-king-season-1-1630854430.webp)">
+            </div>
+      
+
+        <!-- Start media-play -->
+        <i class=" fa fa-play"></i>
+
+
+
+        <!-- Start rate-quality-info -->
+        <div class="quality-info">
+            <span style="display: block;text-align: center;">HD</span>
+            
+        </div>
+
+        <div class="header">
+            <div class="movie">
+                <i class="fa fa-film"></i>
+                Movie
+            </div>
+
+
+            <h5 class="title">Tulsa King – Season 1</h5>
+        </div>
+    </div>
+ 
+    
+   
+    
+</div>
+    <style>
+        body {
+            background: linear-gradient(125deg, black 15%, midnightblue 150%);
+      
+        }
+
+        .main {
+            color: white;
+            font-family: Tajawal;
+            width: 167px;
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+
+         .media-thumb {
+          background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          height: inherit;
+            transition: all 0.6s ease;
+        
+
+/* padding-bottom: 158%; */
+
+        } 
+        .quality-info{
+            position: absolute;
+top: 3%;
+right: -30%;
+background: rgb(33, 37, 41);
+transition: all 0.6s ease;
+font-weight:bold ;
+        }
+
+
+      
+
+        .movie {
+            background: rgb(248, 181, 53);
+            width: fit-content;
+            color: #0c0f21;
+            font-size: small;
+            transition: all 0.5s ease-in-out;
+            position: relative;
+            left: -100%;
+            border-radius: 3px;
+        }
+
+        h5 {
+            margin-top: 2px;
+            width: fit-content;
+        }
+
+        .fa-play {
+            justify-content: center;
+            display: flex;
+            transition: all 0.5s ease-in-out;
+            position: absolute;
+            top:-20%;
+            font-size: xx-large;
+            left: 44%;
+
+        }
+
+        .header {
+            position: absolute;
+            bottom: -10px;
+        }
+
+        .main:hover .movie {
+            left: 40%;
+        }
+
+        .main:hover .fa-play {
+            top: 44%;
+        }
+        .main:hover .quality-info {
+            right: 3%;
+        }
+        .main:hover .media-thumb {
+            opacity: 0.4;
+            scale: 1.1;
+            overflow: hidden;
+
+        }
+       
+    
+    </style>
+
+</body>
+
+</html>
